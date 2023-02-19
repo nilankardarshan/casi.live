@@ -5,13 +5,13 @@ import { Configuration, OpenAIApi } from 'openai';
 
 dotenv.config();
 
-console.log(process.env.OPENAI_API_KEY)
+//console.log(process.env.OPENAI_API_KEY)
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-//const openai = new OpenAIApi(configuration);
+const openai = new OpenAIApi(configuration);
 
 const app = express();
 app.use(cors());
