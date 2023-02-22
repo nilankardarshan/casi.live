@@ -155,8 +155,7 @@ if (SpeechRecognition) {
   // Create and append a new microphone button
   const micBtn = document.createElement("button");
   micBtn.type = "button";
-  //micBtn.innerHTML = '<img src="./assets/OFF_VR.png" /><img src="./assets/ON_VR.png" style="display: none" />';
-  micBtn.innerHTML = "<img src='assets/OFF_VR.png' /><img src='assets/ON_VR.png' style='display: none' />";
+  micBtn.innerHTML = '<img src="/assets/OFF_VR.png" /><img src="/assets/ON_VR.png" style="display: none" />';
   searchForm.appendChild(micBtn);
 
   // Get references to the two images
@@ -335,7 +334,7 @@ function getWeather(latitude, longitude){
 // DISPLAY WEATHER TO UI
 function displayWeather()
 {
-  iconElement.innerHTML = `<img src="./weather-icons/${weather.iconId}.png"style="height: 50px; width: 50px">`;
+  iconElement.innerHTML = `<img src="/weather-icons/${weather.iconId}.png"style="height: 50px; width: 50px">`;
   tempElement.innerHTML = `${weather.temperature.value}&#8451;`;
   descElement.innerHTML = weather.description;
   locationElement.innerHTML = `${weather.city}, ${weather.country}`; 
