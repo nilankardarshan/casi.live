@@ -155,7 +155,7 @@ if (SpeechRecognition) {
   // Create and append a new microphone button
   const micBtn = document.createElement("button");
   micBtn.type = "button";
-  micBtn.innerHTML = '<img src="/assets/OFF_VR.png" /><img src="/assets/ON_VR.png" style="display: none" />';
+  micBtn.innerHTML = '<img src="./assets/OFF_VR.png" /><img src="./assets/ON_VR.png" style="display: none" />';
   searchForm.appendChild(micBtn);
 
   // Get references to the two images
