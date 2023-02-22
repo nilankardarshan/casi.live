@@ -334,8 +334,7 @@ function getWeather(latitude, longitude){
 // DISPLAY WEATHER TO UI
 function displayWeather()
 {
-  iconElement.innerHTML = `<img src="./${weather.iconId}.png" style="height: 50px; width: 50px">`;
- // iconElement.innerHTML =  <img src={"/weather-icons/${weather.iconId}.png"} style="height: 50px; width: 50px" alt="" />
+  iconElement.innerHTML = `<img src="./weather-icons/${weather.iconId}.png"  alt="" style="height: 50px; width: 50px">`;
   tempElement.innerHTML = `${weather.temperature.value}&#8451;`;
   descElement.innerHTML = weather.description;
   locationElement.innerHTML = `${weather.city}, ${weather.country}`; 
