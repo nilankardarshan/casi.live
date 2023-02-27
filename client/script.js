@@ -37,6 +37,7 @@ if (SpeechRecognition) {
   // Create and append a new microphone button
   const micBtn = document.createElement("button");
   micBtn.type = "button";
+  micBtn.title="Speech Recognition";
   micBtn.innerHTML = '<img src="./assets/OFF_VR.png" /><img src="./assets/ON_VR.png" style="display: none" />';
   searchForm.appendChild(micBtn);
 
