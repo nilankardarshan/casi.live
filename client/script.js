@@ -1,5 +1,7 @@
 import bot from './assets/casi.png';
 import user from './assets/user.svg';
+import offImg from './assets/OFF_VR.png';
+import onImg from './assets/ON_VR.png';
 
 
 const form = document.querySelector('form');
@@ -38,7 +40,7 @@ if (SpeechRecognition) {
   const micBtn = document.createElement("button");
   micBtn.type = "button";
   micBtn.title="Speech Recognition";
-  micBtn.innerHTML = '<img src="./assets/OFF_VR.png" /><img src="./assets/ON_VR.png" style="display: none" />';
+  micBtn.innerHTML = `<img src="${offImg}" alt="off" /><img src="${onImg}" alt="on" style="display: none" />`;
   searchForm.appendChild(micBtn);
 
   // Get references to the two images
