@@ -20,7 +20,7 @@ body{
   left: 0;
   height: 100%;
   width: 260px;
-   background: #747474c4;
+  background: #747474ef;
   border: .1px solid #00000037;
   box-shadow:  0 0 10px rgba(0, 0, 0, 0.541);
   z-index: 100;
