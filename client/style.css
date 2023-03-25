@@ -628,12 +628,17 @@ color: #00ffcc;
   bottom: 0px;
   left: 0%;
   font-family: "Roboto", sans-serif;
-  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background:#2c2e33;
+  -webkit-backdrop-filter: blur(10px);
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.37);
 }
 
 .news-container .title {
   position: absolute;
-  background: #a20000;
+  background-color: #d01905;
   height: 100%;
   display: flex;
   align-items: center;
@@ -642,7 +647,6 @@ color: #00ffcc;
   font-weight: bold;
   z-index: 200;
 }
-
 /*---------------------------------------------------Text to speech Section --------------*/
 
 .form-group
