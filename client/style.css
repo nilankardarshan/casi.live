@@ -643,45 +643,6 @@ color: #00ffcc;
   z-index: 200;
 }
 
-.news-container ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  animation: scroll 35s infinite linear;
-}
-
-.news-container ul li {
-  white-space: nowrap;
-  padding: 10px 24px;
-  color: #000000;
-  position: relative;
-}
-
-.news-container ul li::after {
-  content:"";
-  width: 1px;
-  height: 100%;
-  background: #000000;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.news-container ul li:last-child::after {
-  display: none;
-}
-
-@keyframes scroll {
-  from {
-      transform: translateX(100%);
-  }
-
-  to {
-      transform: translateX(-2000px);
-
-  }
-}
-
 /*---------------------------------------------------Text to speech Section --------------*/
 
 .form-group
