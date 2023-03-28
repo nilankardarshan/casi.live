@@ -19,7 +19,10 @@
 	
 		<!---------------------------------------------------------------///     ...SIDE TASK BAR...        ///------------------------------------------------------------>
 	
-	<body>
+	<body onload="myfun()">
+
+		<div id = "loading"></div>
+		
 		<div class="sidebar close">
 			<div class="logo-details">
 				<i class='bx bx-menu' ></i>
@@ -295,5 +298,14 @@
 							</tr>
 					</table>
 			</section>
+				<script>
+
+				var preloader = document.getElementById('loading');
+				function myfun()
+				{
+					preloader.style.display = 'none';
+				}
+
+			</script>
 	</body>
 </html>
